@@ -143,7 +143,7 @@ object UserActivity {
     println("Total profileView by the users today " +stringOf(profileViewCountCollected))    
     println("User language preferences" +stringOf(langPreferencesCollect))
     println("User city preferences" +stringOf(cityPreferencesCollect))
-
+    sc.stop
   }
 
 }

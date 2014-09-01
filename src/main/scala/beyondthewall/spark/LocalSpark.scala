@@ -28,6 +28,7 @@ object LocalSpark {
     val groupByKey = multipliedby5.reduceByKey(_ + _)
     val collectedRDD = groupByKey.collect
     println("New Array is " + stringOf(collectedRDD))
+    sc.stop
   }
 
 }
